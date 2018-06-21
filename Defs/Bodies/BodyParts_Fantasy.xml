@@ -2,8 +2,8 @@
 <Defs>
 
   <BodyPartDef>
-    <defName>DemonClaw</defName>
-    <label>claw</label>
+    <defName>RightDemonClaw</defName>
+    <label>right claw</label>
     <hitPoints>15</hitPoints>
     <frostbiteVulnerability>5</frostbiteVulnerability>
     <oldInjuryBaseChance>0</oldInjuryBaseChance>
@@ -16,4 +16,19 @@
     <spawnThingOnRemoved>DemonClaw</spawnThingOnRemoved>
   </BodyPartDef>
 
+  <BodyPartDef>
+    <defName>LeftDemonClaw</defName>
+    <label>left claw</label>
+    <hitPoints>15</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+    <spawnThingOnRemoved>DemonClaw</spawnThingOnRemoved>
+  </BodyPartDef>
+  
 </Defs>

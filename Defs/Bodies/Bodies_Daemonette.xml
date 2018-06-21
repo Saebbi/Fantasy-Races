@@ -317,49 +317,12 @@
                   </groups>
                 </li>
                 <li>
-                  <def>LeftHand</def>
+                  <def>LeftDemonClaw</def>
                   <coverage>0.14</coverage>
                   <height>Bottom</height>
                   <groups>
-                    <li>LeftHand</li>
+                    <li>FrontLeftClaws</li>
                   </groups>
-                  <parts>
-                    <li>
-                      <def>LeftHandPinky</def>
-                      <coverage>0.06</coverage>
-                      <groups>
-                        <li>LeftHand</li>
-                      </groups>
-                    </li>
-                    <li>
-                      <def>LeftHandRingFinger</def>
-                      <coverage>0.07</coverage>
-                      <groups>
-                        <li>LeftHand</li>
-                      </groups>
-                    </li>
-                    <li>
-                      <def>LeftHandMiddleFinger</def>
-                      <coverage>0.08</coverage>
-                      <groups>
-                        <li>LeftHand</li>
-                      </groups>
-                    </li>
-                    <li>
-                      <def>LeftHandIndexFinger</def>
-                      <coverage>0.07</coverage>
-                      <groups>
-                        <li>LeftHand</li>
-                      </groups>
-                    </li>
-                    <li>
-                      <def>LeftHandThumb</def>
-                      <coverage>0.08</coverage>
-                      <groups>
-                        <li>LeftHand</li>
-                      </groups>
-                    </li>
-                  </parts>
                 </li>
               </parts>
             </li>
@@ -405,7 +368,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DemonClaw</def>
+                  <def>RightDemonClaw</def>
                   <coverage>0.14</coverage>
                   <height>Bottom</height>
                   <groups>
