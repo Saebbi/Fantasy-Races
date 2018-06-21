@@ -13,6 +13,7 @@
     <tags>
       <li>ManipulationLimbDigit</li>
     </tags>
+    <spawnThingOnRemoved>DemonClaw</spawnThingOnRemoved>
   </BodyPartDef>
 
 </Defs>

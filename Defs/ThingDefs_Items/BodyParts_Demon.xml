@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>DemonClaw</defName>
+    <label>demon claw</label>
+    <description>Hand replacement with a demon claw. Scavenged from a dead Daemonette.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>2.5</Mass>
+			<DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <techHediffsTags>
+      <li>SpecialWeapon</li>
+    </techHediffsTags>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+  
+</Defs>
