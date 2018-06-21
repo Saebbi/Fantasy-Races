@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseDemon">
+    <statBases>
+      <MoveSpeed>6.3</MoveSpeed>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>left hand</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <herdAnimal>false</herdAnimal>
+      <predator>true</predator>
+      <body>Daemonette</body>
+      <baseHungerRate>0.0</baseHungerRate>
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.8</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <gestationPeriodDays>30</gestationPeriodDays>
+      <wildness>0.99</wildness>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>BadassAnimal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="DemonBase">
+    <combatPower>200</combatPower>
+    <wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+    <wildSpawn_EcoSystemWeight>0.3</wildSpawn_EcoSystemWeight>
+  </PawnKindDef>
+
+
+
+
+  <ThingDef ParentName="BaseDemon">
+    <defName>Daemonette</defName>
+    <label>daemonette</label>
+    <description>One of the lesser Demons of the Chaos God Slaanesh, causing terror and decadence wherever it shows up.</description>
+    <race>
+      <wildness>0.99</wildness>
+      <leatherColor>(153,0,153)</leatherColor>
+      <leatherInsulation>1.0</leatherInsulation>
+      <leatherLabel>demonskin</leatherLabel>
+      <meatLabel>daemonette meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="DemonBase">
+    <defName>Daemonette</defName>
+    <label>daemonette</label>
+    <race>Daemonette</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Daemonette/daemonette</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>
